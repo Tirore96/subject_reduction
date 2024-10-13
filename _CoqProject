@@ -1,0 +1,33 @@
+-R theories MPSTSR
+
+theories/IndTypes/axioms.v
+theories/IndTypes/unscoped.v
+theories/IndTypes/syntax.v
+theories/IndTypes/elimination.v
+
+theories/CoTypes/coGlobal.v
+theories/CoTypes/coLocal.v
+theories/CoTypes/coProj.v
+theories/CoTypes/bisim.v
+
+theories/utils.v
+theories/linearity.v
+theories/linearityDecide.v
+theories/harmony.v
+
+theories/Projection/intermediateProj.v
+theories/Projection/projectDecide.v
+theories/Projection/indProj.v
+
+theories/Process/env.v
+theories/Process/preds.v
+theories/Process/processSyntax.v
+theories/Process/Congruence.v
+theories/Process/SubjectRed.v
+theories/Process/linearity_equiv.v
+theories/Process/SubjectRed2.v
+theories/Process/SubjectRed3.v
+theories/Process/SubjectRed4.v
+
+-arg -w
+-arg none
