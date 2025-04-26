@@ -3,7 +3,28 @@ Session Types: A Mechanised Proof of Subject Reduction. The artifact
 is a Coq (version 8.15.0) mechanisation of a Subject Reduction theorem
 and communication safety for multiparty asynchronous session types.
 
+# Compiling with docker
+
+For the artifact reviewers of ECOOP2025, a docker image with the Coq code along with its dependencies been made available.
+
+To spin up a container based on this image run 
+```docker container -it <image>```
+
+This opens an interactive shell inside the container
+
+Now navigate to the subject_reduction folder by running
+```cd <path>```
+
+
+The Coq code can now be compiled by running
+```make -f CoqMakefile```
+
+For the expected output please see the section "Expected output" below in this README
+
+
 # Installing from scratch
+
+  This section provides installation instructions without the use of a docker image
 
   Make sure opam version is 2.1.0 or above (`opam --version`).
   
@@ -14,7 +35,7 @@ and communication safety for multiparty asynchronous session types.
   eval $(opam env)
   ```
   
-  Next run the following commands from the `MPST/` directory
+  Next run the following commands from the `subject_reduction/` directory
    
   ```
   opam switch create ARTIFACT 4.10.2
