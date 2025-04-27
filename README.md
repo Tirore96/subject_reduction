@@ -44,10 +44,39 @@ For the expected output please see the section "Expected output" below in this R
   opam install coq-mathcomp-zify.1.3.0+1.12+8.13
   opam install coq-deriving.0.1.1
   opam install coq-equations.1.3+8.15
-  coq_makefile -f _CoqProject -o CoqMakeFile
-  make -f CoqMakeFile
   ```
 You can go back to your own switch with `eval $(opam env --switch=NAMEOFYOURSWITCH)`
+
+Finally, you have to move the root folder of the subject_reduction repository into the container. You do this in a separate terminal window (the other being used for the container). 
+
+First clone the repo url
+
+```
+git clone git@github.com:Tirore96/subject_reduction.git
+```
+
+After cloning the repo and checking out ECOOP2025, run
+
+```
+docker container cp subject_reduction/ myContainer:/home/coq/.
+```
+
+and go back to the terminal window used by the container. Now, change the ownership of the copied folder and move to it: 
+
+```
+sudo chown -R coq subject_reduction/
+cd subject_reduction/
+```
+
+Finally, create the makefile and run make: 
+
+```
+coq_makefile -f _CoqProject -o CoqMakeFile
+make -f CoqMakeFile
+```
+
+
+
 
 ## Expected output
 The last part of `SubjectRed4.v` is three print statements 
