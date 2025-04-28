@@ -4,13 +4,18 @@ This artifact accompanies the paper titled Multiparty Asynchronous Session Types
 
 For the artifact reviewers of ECOOP 2025, a Docker image containing the Coq code and its dependencies has been made available.
 
-To spin up a container based on this image run 
-```docker container -it <image>```
+To spin up a container based on this image, first load the image:
+```
+docker load -i ecoop25_subject_reduction_docker.tar.gz
+```
 
-This opens an interactive shell inside the container
+And then run it:
+```
+docker run -it ecoop25_subject_reduction_docker /bin/bash
+```
 
-Now navigate to the subject_reduction folder by running
-```cd <path>```
+
+This opens an interactive shell inside the container. Now, navigate to the subject_reduction folder by running ```cd subject_reduction```
 
 
 The Coq code can now be compiled by running
