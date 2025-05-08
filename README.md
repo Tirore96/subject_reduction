@@ -2,7 +2,8 @@ This artifact accompanies the paper titled Multiparty Asynchronous Session Types
 
 # Compiling with docker
 
-For the artifact reviewers of ECOOP 2025, a Docker image containing the Coq code and its dependencies has been made available.
+For the artifact reviewers of ECOOP 2025, a Docker image containing the Coq code and its dependencies has been made available. The container consists of the `mathcomp/mathcomp:1.17.0-coq-8.15` container which is obtainable by executing `docker pull mathcomp/mathcomp:1.17.0-coq-8.15`. In here, we have copied this repository and followed the "Installing from scratch" instructions below.
+
 
 To spin up a container based on this image, first load the image:
 ```
