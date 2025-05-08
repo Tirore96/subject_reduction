@@ -61,8 +61,9 @@ The last part of `SubjectRed4.v` is three print statements
  Print Assumptions OFT_cong.
  Print Assumptions subject_reduction_final.
  Print Assumptions subject_reduction_empty.
+ Print Assumptions OFT_not_error_struct.
 ``` 
-They print the additional axioms (besides standard CIC axioms) that our Subject Reduction theorem (Theorem 26 in the paper) relies on. Common for all three statements in the theorem, is that they rely only on functional extensionality, which is printed three times.
+They print the additional axioms (besides standard CIC axioms) that our Subject Reduction theorem (Theorem 26 in the paper) relies on. Common for all three statements in the theorem, is that they rely only on functional extensionality, which is printed four times.
 
 To compile the proofs, run the command `make -f CoqMakefile` in the root of the directory. The expected output is:
 ```
