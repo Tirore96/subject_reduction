@@ -1,5 +1,9 @@
 This artifact accompanies the paper titled Multiparty Asynchronous Session Types: A Mechanised Proof of Subject Reduction. It consists of a Coq (version 8.15.0) mechanisation of the subject reduction theorem and communication safety for multiparty asynchronous session types.
 
+# FYI about multiple branches in the repo
+
+The artifact on branch (main) accompanies the version of the paper that appears in my PhD [thesis](https://tirore96.github.io/assets/thesis.pdf). The main result is a Coq proof of subject reduction for multiparty session types. The artifact on the branch (ECOOP2025) contains the latest version of the artifact, and accompanies a newer version of the paper which has been accepted for publication at ECOOP2025. The latest version builds on the subject reduction result and also shows communication safety.
+
 # Installing from scratch
 
   This section provides installation instructions without the use of a docker image.
