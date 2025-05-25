@@ -1,30 +1,5 @@
 This artifact accompanies the paper titled Multiparty Asynchronous Session Types: A Mechanised Proof of Subject Reduction. It consists of a Coq (version 8.15.0) mechanisation of the subject reduction theorem and communication safety for multiparty asynchronous session types.
 
-# Compiling with docker
-
-For the artifact reviewers of ECOOP 2025, a Docker image containing the Coq code and its dependencies has been made available. The container consists of the `mathcomp/mathcomp:1.17.0-coq-8.15` container which is obtainable by executing `docker pull mathcomp/mathcomp:1.17.0-coq-8.15`. In here, we have copied this repository and followed the "Installing from scratch" instructions below.
-
-
-To spin up a container based on this image, first load the image:
-```
-docker load -i ecoop25_subject_reduction_docker.tar.gz
-```
-
-And then run it:
-```
-docker run -it ecoop25_subject_reduction_docker /bin/bash
-```
-
-
-This opens an interactive shell inside the container. Now, navigate to the subject_reduction folder by running ```cd subject_reduction```
-
-
-The Coq code can now be compiled by running
-```make -f CoqMakeFile```
-
-For the expected output please see the section "Expected output" below in this README.
-
-
 # Installing from scratch
 
   This section provides installation instructions without the use of a docker image.
